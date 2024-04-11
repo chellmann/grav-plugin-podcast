@@ -20,7 +20,7 @@
     <itunes:name>{{ channel.header.podcast.itunes.owner.name }}</itunes:name>
     <itunes:email>{{ channel.header.podcast.itunes.owner.email }}</itunes:email>
 </itunes:owner>
-<itunes:image href="{{ uri.base }}{{ channel.media[page.header.podcast.itunes.image].url(true) }}"/>
+<itunes:image href="{{ uri.base }}{{ channel.media[channel.header.podcast.itunes.image].url(true) }}"/>
 <itunes:category text="{{ channel.header.podcast.itunes.category }}">
     <itunes:category text="{{ channel.header.podcast.itunes.subcategory }}"/>
 </itunes:category>
