@@ -1,4 +1,16 @@
-# v3.0.8
+# v3.1.0
+## 04/11/2024
+
+1. [](#new)
+
+2. [](#improved)
+   * PR #58 - Add iTunes summary field (thanks aleclerc7)
+
+3. [](#bugfix)
+    * Issue #61 - Podcast title should come from page.header.podcast.title
+    * Issue #63 - Fix for xml validation
+
+# v3.0.80
 ## 03/19/2021
 
 1. [](#new)
