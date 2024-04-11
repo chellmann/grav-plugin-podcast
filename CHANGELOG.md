@@ -9,6 +9,7 @@
 3. [](#bugfix)
     * Issue #61 - Podcast title should come from page.header.podcast.title
     * Issue #63 - Fix for xml validation
+    * Fix for missing channel image on series RSS feeds.
 
 # v3.0.80
 ## 03/19/2021
