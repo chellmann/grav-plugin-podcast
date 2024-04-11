@@ -37,7 +37,11 @@
     <itunes:author>{{ episode.header.podcast.itunes.author }}</itunes:author>
     <itunes:subtitle>{{ episode.header.podcast.itunes.subtitle }}</itunes:subtitle>
     <itunes:summary>{{ episode.content|striptags|truncate(120, true, " ", "&#x2026;")}}</itunes:summary>
+    {% if episode.header.podcast.itunes.image -%}
     <itunes:image href="{{ uri.base }}{{ episode.media[episode.header.podcast.itunes.image].url(true) }}"/>
+    {% else %}
+    <itunes:image href="{{ uri.base }}{{ url("plugin://podcast/assets/images/default.jpg") }} }}"/>
+    {% endif -%}
     {% if ( episode.header.podcast.audio.remote ) -%}
     <enclosure length="{{ episode.header.podcast.audio.meta.enclosure_length }}" type="{{ episode.header.podcast.audio.meta.type }}" url="{{ episode.header.podcast.audio.remote }}"/>
     <guid>{{ episode.header.podcast.audio.remote }}</guid>
