@@ -20,7 +20,10 @@ en:
       DOWNLOAD: Download Audio
       WARNING: Your browser does not support the audio tag.
       EMPTY: No content available.
+      PUBLISHED: Published
     ADMIN:
+      SETTINGS:
+        AUTO_INLCUDE_ASSETS: "If false you will need to include the CSS and JS manually in your Twig templates when required"
       CHANNEL:
         CONTENT:
           TAB_TITLE: Podcast Page Content
@@ -127,3 +130,91 @@ pt:
       DOWNLOAD: Baixar áudio
       WARNING: Seu navegador não suporta a etiqueta de áudio.
       EMPTY: Nenhum conteúdo disponível.
+de:
+  PLUGIN_PODCAST:
+    CONFIG:
+      MAX_UPLOAD_LABEL: Maximale Dateigröße für Podcast (MB)
+      MAX_UPLOAD_HELP: 'Setze "upload_max_filesize" und "post_max_size" in der php.ini auf diesen Wert oder höher.'
+    WORDS:
+      CHANNEL: KANAL
+      EPISODE: Episode
+      LATEST: Neueste
+      MORE: Mehr
+      PODCAST: Podcast
+      SERIES: Serie
+    SERIES_CONTENT:
+      HEADER: Beschreibung der Serie
+      LATEST_SERIES: Neueste Serie
+    EPISODE_CONTENT:
+      HEADER: Episodeninhalt
+      LATEST_EPISODES: Neueste Episoden
+      LATEST_EPISODES_IN: Neueste Episoden in
+      DOWNLOAD: Audio herunterladen
+      WARNING: Ihr Browser unterstützt das Audiowiedergabe-Tag nicht.
+      EMPTY: Kein Inhalt verfügbar.
+      PUBLISHED: Veröffentlicht
+    ADMIN:
+      SETTINGS:
+        AUTO_INLCUDE_ASSETS: Wenn deaktiviert bitte CSS von Hand in die Twig-Templates einbinden falls nötig
+      CHANNEL:
+        CONTENT:
+          TAB_TITLE: Inhalt der Podcast-Seite
+          PAGE_TITLE_LABEL: Seitentitel
+        CHANNEL_META:
+          TAB_TITLE: Kanal-Metadaten
+          TAB_HELPTEXT: Metadaten im Zusammenhang mit dem Kanalbereich des Podcasts.
+          PODCAST_TITLE_LABEL: Podcast-Titel
+          PODCAST_TITLE_HELPTEXT: Wird im RSS-Feed verwendet.
+          PODCAST_SUBTITLE_LABEL: iTunes-Untertitel
+          PODCAST_SUBTITLE_HELPTEXT: 'Beispiel: "Eine Show über alles..."'
+          PODCAST_SUMMARY_LABEL: iTunes-Zusammenfassung
+          PODCAST_SUMMARY_HELPTEXT: iTunes-Zusammenfassung (falls leer, wird auf den Podcast-Seiteninhalt zurückgegriffen, dann Kanalbeschreibung)
+          PODCAST_DESCRIPTION_LABEL: Kanalbeschreibung
+          PODCAST_LINK_LABEL: Kanal-URL
+          PODCAST_LINK_HELPTEXT: Wird im RSS-Feed verwendet.
+          PODCAST_LANG_LABEL: Kanalsprache
+          PODCAST_LANG_HELPTEXT: Wird nur für den RSS-Feed verwendet.
+          PODCAST_COPYRIGHT_LABEL: Urheberrecht
+        ITUNES_META:
+          TAB_TITLE: iTunes-Metadaten
+          TAB_HELPTEXT: Metadaten im Zusammenhang mit dem iTunes-Bereich des Podcasts.
+          ITUNES_AUTHOR_LABEL: Autor
+          ITUNES_AUTHOR_HELPTEXT: 'Beispiel: "John Doe"'
+          ITUNES_OWNER_LABEL: Besitzer
+          ITUNES_OWNER_HELPTEXT: 'Beispiel: "John Doe"'
+          ITUNES_OWNER_EMAIL_LABEL: Besitzer-E-Mail
+          ITUNES_OWNER_EMAIL_HELPTEXT: 'Beispiel: "jdoe@example.com"'
+          ITUNES_IMAGE_LABEL: Kanalbild
+          ITUNES_CATEGORY_LABEL: Kategorie
+          ITUNES_SUBCATEGORY_LABEL: Unterkategorie
+          ITUNES_EXPLICIT_LABEL: Expliziter Inhalt
+          ITUNES_EXPLICIT_HELPTEXT: Enthält dieser Podcast Inhalte, die für Kinder ungeeignet sein könnten?
+      SERIES:
+        CONTENT:
+          TAB_TITLE: Inhalt der Podcast-Serie
+          PAGE_TITLE_LABEL: Serientitel
+          SERIES_IMAGE_LABEL: Serienbild
+          SERIES_IMAGE_HELPTEXT: Lade Bilder unten im Seitenmediabereich hoch und speichere sie. Wähle dann eines in diesem Dropdown-Menü aus, um es als Hauptbild der Serie zu verwenden.
+      EPISODE:
+        CONTENT:
+          TAB_TITLE: Podcast-Episode
+          PAGE_TITLE_LABEL: Episodentitel
+          SUBTITLE_LABEL: Episodenuntertitel
+          EPISODE_NUMBER_LABEL: Episodennummer
+        PODCAST_AUDIO:
+          TAB_TITLE: Podcast-Audio
+          LOCAL_HOSTED_LABEL: Lokal gehostete Dateien
+          LOVAL_HOSTED_HELPTEXT: Wenn Sie Ihre Audiodateien auf <strong>diesem</strong> Server hosten, laden Sie die Medien im Podcast-Tab hoch.
+          EXTERNAL_HOSTED_LABEL: Externe Dateien
+          EXTERNAL_HOSTED_HELPTEXT: Wenn Sie Ihre Audiodateien auf <strong>einem anderen</strong> Server/CDN hosten, füllen Sie das Feld unten aus.
+          EXTERNAL_URL_LABEL: Remote-Podcast-URL
+          EXTERNAL_URL_HELPTEXT: Externe Dateien haben Vorrang vor lokal gehosteten Dateien, wenn sie auf einer Seite angezeigt werden.
+        ITUNES_META:
+          TAB_TITLE: iTunes-Episoden-Metadaten
+          TAB_HELPTEXT: Metadaten im Zusammenhang mit der Podcast-Episode
+          AUTHOR_LABEL: Episodenautor
+          AUTHOR_HELPTEXT: 'Beispiel: "John Doe"'
+          IMAGE_LABEL: Episodenbild
+          IMAGE_HELPTEXT: Lade Bilder unten im Seitenmediabereich auf dem Podcast-Episoden-Tab hoch. Wähle dann eines in diesem Dropdown-Menü aus, um es als Hauptbild der Serie zu verwenden.
+          EXPLICIT_LABEL: Expliziter Inhalt
+          EXPLICIT_HELPTEXT: Enthält diese Podcast-Episode Inhalte, die für Kinder ungeeignet sein könnten?
